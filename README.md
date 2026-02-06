@@ -1,52 +1,99 @@
-# 🧠 Ops AI — Task Intelligence & Workflow Automation
+Ops AI – Task Automation MVP
 
-An AI-powered operations assistant that converts unstructured messages into structured tasks, routes them to Todoist, and continuously monitors task completion for reminders and escalation.
+Description:
+An AI-powered operations assistant that converts unstructured messages into actionable tasks and tracks their completion in Todoist.
 
-This project demonstrates how AI can reduce operational overhead by automating task intake, tracking, and hygiene — without requiring users to change how they communicate.
+Features
 
----
+Accepts free-text operational requests
 
-## 🚀 Problem Statement
+Classifies messages as task or policy question
 
-Operations and admin teams receive requests via chat, email, or forms in free text:
+Creates tasks in Todoist automatically
 
-> “Please arrange laptop and access for the new employee joining next week”
+Checks task completion status via API
 
-These messages are:
-- Unstructured  
-- Easy to miss  
-- Hard to track  
-- Often forgotten until it’s too late  
+Traceable logs with timestamps
 
----
+Tech Stack
 
-## 🧩 Solution Overview
+Python 3.12
 
-**Workflow:**
+Flask
 
-1. User sends a free-text message  
-2. AI determines whether the message is actionable  
-3. Actionable messages are converted into structured tasks  
-4. Tasks are created in Todoist  
-5. A scheduled job checks task status  
-6. Incomplete or overdue tasks are flagged for notification  
+Open-source LLM: Mistral via Ollama
 
----
+Todoist REST API
 
-## 🏗️ Architecture
+FAISS vector database for SOP retrieval
 
-```text
-[User Message]
-      ↓
-[AI Classifier]
-      ↓
-[Task Extraction]
-      ↓
-[Todoist API]
-      ↓
-[Task Monitor Endpoint]
-      ↓
-[Cron Job / Scheduler]
-      ↓
-[Reminder / Escalation]
-```
+Python logging module for traceability
+
+API Endpoints
+1. POST /intake
+
+Create a task from a message.
+
+Request Example
+
+{
+  "message": "Arrange laptop for new employee"
+}
+
+
+Response Example
+
+{
+  "status": "success",
+  "task": {
+    "content": "Arrange laptop",
+    "priority": "high",
+    "added_at": "2026-02-06T04:42:55"
+  }
+}
+
+2. GET /tasks/status
+
+Retrieve all tasks and their completion status.
+
+Response Example
+
+{
+  "tasks": [
+    {
+      "content": "Arrange laptop",
+      "added_at": "2026-02-06T04:42:55",
+      "due": "2026-02-07",
+      "completed": false
+    }
+  ]
+}
+
+Setup
+
+Clone the repo:
+
+git clone https://github.com/yourusername/ops-ai.git
+cd ops-ai
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Set environment variables:
+
+TODOIST_API_KEY=your_todoist_key
+TODOIST_PROJECT_ID=your_project_id
+
+
+Run Flask app:
+
+python app.py
+
+Notes
+
+Designed as an MVP; can be extended with notifications, cron-based reminders, and more advanced RAG features.
+
+Logs all operations for traceability.
