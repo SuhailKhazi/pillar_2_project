@@ -1,0 +1,256 @@
+[
+  {
+    "timestamp": "2026-02-06T11:05:46.833943",
+    "event_type": "intake_received",
+    "data": {
+      "message": "book meeting with Tom please"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:06:11.040462",
+    "event_type": "classification_done",
+    "data": {
+      "message": "book meeting with Tom please",
+      "classification": {
+        "type": "task",
+        "domain": "general",
+        "priority": "medium"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:06:12.850701",
+    "event_type": "task_created",
+    "data": {
+      "message": "book meeting with Tom please",
+      "todoist_id": "9991095273",
+      "priority": "medium",
+      "sop_tip": "and invoice upload."
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:07:09.619372",
+    "event_type": "intake_received",
+    "data": {
+      "message": "what should i arrange for the new recruit?"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:07:19.186270",
+    "event_type": "classification_done",
+    "data": {
+      "message": "what should i arrange for the new recruit?",
+      "classification": {
+        "type": "task",
+        "domain": "general",
+        "risk": "low"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:07:21.044888",
+    "event_type": "task_created",
+    "data": {
+      "message": "what should i arrange for the new recruit?",
+      "todoist_id": "9991097390",
+      "priority": "low",
+      "sop_tip": "SFO EXPENSES \u2013 STANDARD OPERATING PROCEDURE (SOP) Company: QUANT LAB SFO FZCO Applies to: All purchases made using the SFO (company) card 1. Purpose To ensure all company expenses are UAE audit-compliant, properly documented for accounting, and clearly separated from personal expenses. 2. What Can Be Purchased 2.1 Employee Assets \u2022 Laptops \u2022 Mobile phones \u2022 Tablets \u2022 Company SIM cards / DU recharge plans (SIM must be registered under Quantlab) 2.2 Products, Services & Subscriptions The following must be purchased only under a company account (examples, not limited to): \u2022 Products required for company or employee use \u2022 Recruitment"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:11:34.185958",
+    "event_type": "intake_received",
+    "data": {
+      "message": "what are the employee assets?"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:11:37.849010",
+    "event_type": "classification_done",
+    "data": {
+      "message": "what are the employee assets?",
+      "classification": {
+        "type": "policy_question",
+        "domain": "general",
+        "priority": "low"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:12:16.300977",
+    "event_type": "policy_response_generated",
+    "data": {
+      "message": "what are the employee assets?",
+      "sop_response": "The employee assets include laptops, mobile phones, tablets, and company SIM cards/DU recharge plans (with the SIM registered under Quantlab)."
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:20:10.954913",
+    "event_type": "intake_received",
+    "data": {
+      "message": "What things should I arrange for a new employee?"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:20:28.577334",
+    "event_type": "classification_done",
+    "data": {
+      "message": "What things should I arrange for a new employee?",
+      "classification": {
+        "type": "task",
+        "domain": "general",
+        "priority": "medium"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:20:30.436410",
+    "event_type": "task_created",
+    "data": {
+      "message": "What things should I arrange for a new employee?",
+      "todoist_id": "9991122463",
+      "priority": "medium",
+      "sop_tip": "SFO EXPENSES \u2013 STANDARD OPERATING PROCEDURE (SOP) Company: QUANT LAB SFO FZCO Applies to: All purchases made using the SFO (company) card 1. Purpose To ensure all company expenses are UAE audit-compliant, properly documented for accounting, and clearly separated from personal expenses. 2. What Can Be Purchased 2.1 Employee Assets \u2022 Laptops \u2022 Mobile phones \u2022 Tablets \u2022 Company SIM cards / DU recharge plans (SIM must be registered under Quantlab) 2.2 Products, Services & Subscriptions The following must be purchased only under a company account (examples, not limited to): \u2022 Products required for company or employee use \u2022 Recruitment"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:21:28.805173",
+    "event_type": "intake_received",
+    "data": {
+      "message": "what are the employee assets?"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:21:35.829185",
+    "event_type": "classification_done",
+    "data": {
+      "message": "what are the employee assets?",
+      "classification": {
+        "type": "policy_question",
+        "domain": "general",
+        "priority": "medium",
+        "question": "What are the employee assets?"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T11:22:40.108138",
+    "event_type": "policy_response_generated",
+    "data": {
+      "message": "what are the employee assets?",
+      "sop_response": "The employee assets at Quant Lab SFO FZCO include laptops, mobile phones, tablets, and company SIM cards/DU recharge plans. These items should be registered under the company name 'Quantlab'. Other purchases for the company or employee use, such as products, services, subscriptions, recruitment-related expenses, and invoice uploads, must also be made using a company account. The buyer's name on the invoices should always be 'QUANT LAB SFO FZCO', with the TRN number 105069744800001. It is essential to avoid using personal accounts and create a company account if necessary. Invoices must include all relevant details, be uploaded to the SFO Purchases - Invoices Google Drive folder, and contain the correct payment, buyer details, billing address, TRN, and other required information."
+    }
+  },
+  {
+    "timestamp": "2026-02-06T14:57:06.217931",
+    "event_type": "intake_received",
+    "data": {
+      "message": "book a meeting with Ahmad please"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T14:57:33.431481",
+    "event_type": "classification_done",
+    "data": {
+      "message": "book a meeting with Ahmad please",
+      "classification": {
+        "type": "task",
+        "domain": "general",
+        "risk": "low"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T14:57:35.555154",
+    "event_type": "task_created",
+    "data": {
+      "message": "book a meeting with Ahmad please",
+      "todoist_id": "9991643641",
+      "priority": "low",
+      "sop_tip": "portals (e.g. pracuj.pl, Indeed) \u2022 Software tools \u2022 Business subscriptions \u2022 DU business / enterprise mobile plans Conditions (mandatory): \u2022 Purchase under company account (QUANT LAB SFO FZCO) \u2022 Payment via SFO card \u2022 Valid invoice issued to company 3. Payment Rule \u2022 Only the SFO card may be used \u2022 Personal cards are not allowed \u2022 No mixing personal and company items 4. Shipping & Billing Details Shipping Address: Villa 47A, Frond N, Palm Jumeirah, Dubai, United Arab Emirates Billing Address (Bills To): QUANT LAB SFO FZCO DMCC Business Centre, UT-11-CO-190 Uptown Tower, JLT, Dubai, UAE This billing address"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:01:56.987101",
+    "event_type": "intake_received",
+    "data": {
+      "message": "where should i store my invoices?"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:02:07.966955",
+    "event_type": "classification_done",
+    "data": {
+      "message": "where should i store my invoices?",
+      "classification": {
+        "type": "policy_question",
+        "domain": "general",
+        "priority": "medium"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:03:13.464439",
+    "event_type": "policy_response_generated",
+    "data": {
+      "message": "where should i store my invoices?",
+      "sop_response": "The staff member should store their invoices in the SFO Purchases - Invoices Google Drive folder. To ensure compliance with UAE audits, correct billing details, and proper accounting, all invoices must include the necessary details such as seller details, buyer name (QUANT LAB SFO FZCO), billing address, TRN, invoice date, and amount. If a company account doesn't exist, one should be created under QUANT LAB SFO FZCO to avoid using personal accounts."
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:37:20.426168",
+    "event_type": "intake_received",
+    "data": {
+      "message": "Book a meeting with John for 6 pm today"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:37:47.715258",
+    "event_type": "classification_done",
+    "data": {
+      "message": "Book a meeting with John for 6 pm today",
+      "classification": {
+        "type": "task",
+        "domain": "general",
+        "priority": "medium"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:37:49.438045",
+    "event_type": "task_created",
+    "data": {
+      "message": "Book a meeting with John for 6 pm today",
+      "todoist_id": "9991791368",
+      "priority": "medium",
+      "sop_tip": "portals (e.g. pracuj.pl, Indeed) \u2022 Software tools \u2022 Business subscriptions \u2022 DU business / enterprise mobile plans Conditions (mandatory): \u2022 Purchase under company account (QUANT LAB SFO FZCO) \u2022 Payment via SFO card \u2022 Valid invoice issued to company 3. Payment Rule \u2022 Only the SFO card may be used \u2022 Personal cards are not allowed \u2022 No mixing personal and company items 4. Shipping & Billing Details Shipping Address: Villa 47A, Frond N, Palm Jumeirah, Dubai, United Arab Emirates Billing Address (Bills To): QUANT LAB SFO FZCO DMCC Business Centre, UT-11-CO-190 Uptown Tower, JLT, Dubai, UAE This billing address"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:39:01.527966",
+    "event_type": "intake_received",
+    "data": {
+      "message": "What are the employee assets?"
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:39:08.878015",
+    "event_type": "classification_done",
+    "data": {
+      "message": "What are the employee assets?",
+      "classification": {
+        "type": "policy_question",
+        "domain": "general",
+        "priority": "low"
+      }
+    }
+  },
+  {
+    "timestamp": "2026-02-06T15:40:22.200622",
+    "event_type": "policy_response_generated",
+    "data": {
+      "message": "What are the employee assets?",
+      "sop_response": "The employee assets that can be purchased using the company card at Quant Lab SFO FZCO include laptops, mobile phones, tablets, and company SIM cards/DU recharge plans. These items must be registered under Quantlab. Other products, services, and subscriptions required for company or employee use can also be purchased, but only under a company account. To ensure all purchases are audit-compliant and properly documented, make sure to provide a valid tax invoice that includes the necessary details, and store the invoices in the SFO Purchases - Invoices Google Drive folder."
+    }
+  }
+]
